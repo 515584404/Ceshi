@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.ceshi.android.ui.FindIdeaActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/comon_head" />
+    </android.support.design.widget.AppBarLayout>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_text_border"
+        android:gravity="top"
+        android:hint="请输入您的反馈意见"
+        android:paddingLeft="5dp"
+        android:paddingTop="10dp"
+        android:textSize="@dimen/f_14" />
+
+    <EditText
+        android:id="@+id/findidea_et_phone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@drawable/shape_text_border"
+        android:digits="1234567890-"
+        android:hint="请留下您的联系方式，方便快速给您反馈"
+        android:inputType="number"
+        android:maxLength="11"
+        android:padding="10dp"
+        android:textSize="@dimen/f_14" />
+
+    <Button
+        android:id="@+id/findidea_btn_back"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/selector_btn_bg"
+        android:paddingLeft="60dp"
+        android:paddingRight="60dp"
+        android:text="告诉我们"
+        android:textColor="@color/white"
+        android:textSize="@dimen/f_15" />
+</LinearLayout>

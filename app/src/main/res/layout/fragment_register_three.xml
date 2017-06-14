@@ -1,0 +1,125 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_bg"
+    android:clickable="true"
+    android:orientation="vertical"
+    android:padding="20dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+        <EditText
+            android:id="@+id/et_shez_mima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890*#_-@"
+            android:hint="设置登陆密码（6-20位）"
+            android:imeOptions="actionNext"
+            android:inputType="numberPassword"
+            android:maxLength="20"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_new_light"
+            android:textCursorDrawable="@null" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/et_qr_mima"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890*#_-@"
+            android:hint="请确认密码"
+            android:imeOptions="actionNext"
+            android:inputType="numberPassword"
+            android:maxLength="20"
+            android:padding="15dp"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_new_light"
+            android:textCursorDrawable="@null" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+
+        <EditText
+            android:id="@+id/et_tuijian"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_weight="1"
+            android:background="@null"
+            android:hint="推荐手机号(非必选)"
+            android:imeOptions="actionNext"
+            android:padding="15dp"
+            android:inputType="phone"
+            android:digits="1234567890-"
+            android:maxLength="11"
+            android:singleLine="true"
+            android:textColorHint="@color/gray_new_light"
+            android:textCursorDrawable="@null" />
+
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:background="@color/gray" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:paddingTop="30dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/icon_gouxuan" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="点击完成注册即代表您同意"
+            android:textColor="@color/gray" />
+
+        <TextView
+            android:id="@+id/ly_zc_xy"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="《注册协议》"
+            android:textColor="@color/blue_middle" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp">
+
+        <Button
+            android:id="@+id/btn_finish"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_below="@+id/login_chicknum"
+            android:layout_gravity="right"
+            android:background="@drawable/btn_bg"
+            android:text="完成注册"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </LinearLayout>
+</LinearLayout>

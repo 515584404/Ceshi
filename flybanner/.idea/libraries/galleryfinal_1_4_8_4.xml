@@ -1,0 +1,13 @@
+<component name="libraryTable">
+  <library name="galleryfinal-1.4.8.4">
+    <CLASSES>
+      <root url="file://$USER_HOME$/.android/build-cache/d28f69f488fbcc74c2404e15b3326a9e49dfd2bf/output/res" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d28f69f488fbcc74c2404e15b3326a9e49dfd2bf/output/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/d28f69f488fbcc74c2404e15b3326a9e49dfd2bf/output/jars/libs/ToolsFinal-1.1.3-release.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/cn.finalteam/galleryfinal/1.4.8.4/de863f9da8b9bf2ec10238bf9a42fc7895fd6508/galleryfinal-1.4.8.4-sources.jar!/" />
+    </SOURCES>
+  </library>
+</component>

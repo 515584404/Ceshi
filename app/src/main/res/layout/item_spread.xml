@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:orientation="vertical"
+    android:padding="10dp">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/iv_person"
+            android:layout_width="15dp"
+            android:layout_height="15dp"
+            android:src="@mipmap/generalize_record" />
+
+        <com.ceshi.android.base.view.HandyTextView
+            android:id="@+id/tv_phone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_toRightOf="@id/iv_person"
+            android:paddingLeft="5dp"
+            android:text=""
+            android:textColor="@color/gray" />
+
+        <com.ceshi.android.base.view.HandyTextView
+            android:id="@+id/tv_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:text=""
+            android:textColor="@color/gray" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginRight="5dp"
+        android:paddingTop="10dp">
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true">
+
+            <TextView
+                android:id="@+id/tv_tuiguang"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="推广奖励："
+                android:textColor="@color/gray" />
+
+            <com.ceshi.android.base.view.HandyTextView
+                android:id="@+id/tv_jine"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_toRightOf="@+id/tv_tuiguang"
+                android:text="￥30"
+                android:textColor="@color/new_orgin" />
+        </RelativeLayout>
+
+    </RelativeLayout>
+</LinearLayout>

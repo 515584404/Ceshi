@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/bg_page">
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/AppTheme.AppBarOverlay">
+
+        <include layout="@layout/main_touzi_title"/>
+    </android.support.design.widget.AppBarLayout>
+    <ListView
+        android:id="@+id/lv_bank"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:dividerHeight="1dp"
+        android:layout_marginTop="10dp"
+        android:divider="@color/bg_page"
+        android:fadingEdge="none"
+        android:scrollbarStyle="outsideOverlay"></ListView>
+
+    <TextView
+        android:id="@+id/tv_listview_empty"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:gravity="center"
+        android:text="暂无数据!"
+        android:textColor="@color/gray_light" />
+</LinearLayout>

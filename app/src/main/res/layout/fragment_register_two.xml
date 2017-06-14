@@ -1,0 +1,124 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_bg"
+    android:clickable="true"
+    android:padding="20dp">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.6"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/tv_phone"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="13424534534"
+                android:padding="20dp"
+                android:layout_gravity="center"
+                android:gravity="center"
+                android:textSize="24sp"
+                android:textColor="@color/colorAccent"
+                android:layout_marginTop="10dp"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginBottom="5dip"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_pic_chicknum"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="3"
+                android:textCursorDrawable="@null"
+                android:background="@drawable/edittext_background"
+                android:hint="请输入验证码"
+                android:textSize="15sp"
+                android:textColorHint="@color/gray_new_light"
+                android:imeOptions="actionNext"
+                android:singleLine="true" />
+
+
+            <ImageView
+                android:id="@+id/iv_yz"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:layout_gravity="right"
+                android:background="@drawable/edittext_background"
+                android:paddingLeft="10dip" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="right">
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="看不清，换一张"
+                android:textColor="@color/gray"/>
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center|left"
+            android:layout_marginBottom="15dip"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/edittext_background_ly"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/et_chicknum"
+                android:layout_width="0dp"
+                android:layout_height="45dp"
+                android:layout_weight="3"
+                android:background="@drawable/edittext_background"
+                android:digits="abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890*#_-@"
+                android:hint="请输入短信验证码"
+                android:textColorHint="@color/gray_new_light"
+                android:imeOptions="actionNext"
+                android:inputType="phone"
+                android:textSize="15sp"
+                android:textCursorDrawable="@null"
+                android:singleLine="true" />
+
+            <TextView
+                android:id="@+id/tv_get_verification_code"
+                android:layout_width="0dp"
+                android:layout_weight="1"
+                android:layout_height="45dp"
+                android:text="发送"
+                android:textSize="15sp"
+                android:gravity="center"
+                android:background="@drawable/btn_bg"
+                android:textColor="@color/white"/>
+        </LinearLayout>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:layout_marginTop="10dp">
+        <Button
+            android:id="@+id/btn_next"
+            android:layout_width="match_parent"
+            android:layout_height="45dp"
+            android:background="@drawable/btn_bg"
+            android:text="下一步"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:layout_below="@+id/login_chicknum" />
+    </LinearLayout>
+</LinearLayout>

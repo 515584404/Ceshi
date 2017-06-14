@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_bg"
+    android:orientation="vertical">
+
+    <android.support.v4.widget.SwipeRefreshLayout
+        android:id="@+id/jiainterest_srl_swiperefresh"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ListView
+            android:layout_width="match_parent"
+            android:padding="10dp"
+            android:divider="#00000000"
+            android:dividerHeight="10dp"
+            android:scrollbars="none"
+            android:id="@+id/jiainterest_lv_listview"
+            android:layout_height="match_parent">
+        </ListView>
+    </android.support.v4.widget.SwipeRefreshLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:id="@+id/bottom"
+        android:gravity="center"
+        android:padding="10dp"
+        android:text="加载完毕，没有更多内容了！"
+        android:layout_height="wrap_content" />
+</LinearLayout>

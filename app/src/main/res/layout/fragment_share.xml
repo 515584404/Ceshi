@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_marginTop="20dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="我的邀请链接" />
+
+    <TextView
+        android:id="@+id/share_tv_sharelink"
+        android:layout_width="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_gravity="center"
+        android:autoLink="web"
+        android:text="https://baidu.com/"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content"
+        android:text="我的专属二维码" />
+    <ImageView
+        android:id="@+id/share_iv_qrcode"
+        android:layout_width="wrap_content"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/ic_launcher"
+        android:layout_gravity="center"
+        android:layout_height="wrap_content" />
+</LinearLayout>

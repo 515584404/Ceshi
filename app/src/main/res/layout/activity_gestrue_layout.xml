@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_bg"
+    android:clickable="true"
+    android:orientation="vertical">
+
+    <ImageView
+        android:id="@+id/iv_gesture_back"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_margin="20dp"
+        android:src="@mipmap/back"/>
+
+    <TextView
+        android:id="@+id/gestrue_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginTop="20dp"
+        android:gravity="center"
+        android:text="绘制解锁图案"
+        android:textColor="@color/gray_light"
+        android:textSize="17sp" />
+
+
+    <com.ceshi.android.base.view.LockPatternView
+        android:id="@+id/lockview"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_gravity="center"
+        android:layout_marginLeft="30dp"
+        android:layout_marginRight="30dp"
+        android:layout_marginTop="60dp" />
+    <TextView
+        android:id="@+id/tv_gesture_forgetMima"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="忘记手势密码"
+        android:textColor="@color/gray_light"
+        android:textSize="17sp"
+        android:layout_gravity="right"
+        android:layout_marginTop="20dp"
+        android:layout_marginRight="20dp"/>
+
+</LinearLayout>

@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:custom="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/btn_bg"
+    android:clickable="true"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    android:orientation="vertical"
+    tools:context=".ui.MainActivity">
+
+    <android.support.design.widget.AppBarLayout
+        android:layout_width="match_parent"
+        android:visibility="gone"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/main_head_title" />
+    </android.support.design.widget.AppBarLayout>
+
+    <com.ceshi.android.util.MySwipeRefreshLayout
+        android:id="@+id/refresh_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ScrollView
+            android:id="@+id/sv"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:id="@+id/rl_top"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content">
+                    <com.recker.flybanner.FlyBanner
+                        android:id="@+id/flyBanner"
+                        android:layout_width="match_parent"
+                        android:layout_height="180dp"/>
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/rl_gonggao"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/rl_top"
+                    android:background="@color/white">
+
+                    <LinearLayout
+                        android:id="@+id/ll_gs"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:padding="10dp">
+
+                        <ImageView
+                            android:layout_width="20dp"
+                            android:layout_height="20dp"
+                            android:src="@mipmap/home_trumpet" />
+
+                        <com.ceshi.android.base.view.HandyTextView
+                            android:id="@+id/tv_message"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginLeft="5dp"
+                            android:ellipsize="end"
+                            android:singleLine="true"
+                            android:textColor="@color/black"
+                            android:text="" />
+
+                    </LinearLayout>
+
+                    <View
+                        android:id="@+id/view"
+                        android:layout_width="match_parent"
+                        android:layout_height="1dp"
+                        android:layout_below="@+id/ll_gs"
+                        android:background="@color/bg_page" />
+
+                    <LinearLayout
+                        android:id="@+id/mainfragment_ll_safedetail"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center_vertical"
+                        android:layout_below="@+id/view"
+                        android:layout_gravity="center"
+                        android:padding="10dp">
+
+                        <com.ceshi.android.base.view.HandyTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawableTop="@mipmap/disperse_money_new"
+                            android:gravity="center"
+                            android:textColor="@color/gray_light"
+                            android:text="分散理财" />
+
+                        <com.ceshi.android.base.view.HandyTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawableTop="@mipmap/stable_returns"
+                            android:gravity="center"
+                            android:textColor="@color/gray_light"
+                            android:text="稳定收益" />
+
+                        <com.ceshi.android.base.view.HandyTextView
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center"
+                            android:layout_weight="1"
+                            android:drawableTop="@mipmap/multiple_risk_contro"
+                            android:gravity="center"
+                            android:textColor="@color/gray_light"
+                            android:text="多重风控" />
+                    </LinearLayout>
+
+                </RelativeLayout>
+
+                <com.ceshi.android.base.MyListView
+                    android:id="@+id/lv_main"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:dividerHeight="0.0dip"></com.ceshi.android.base.MyListView>
+            </LinearLayout>
+        </ScrollView>
+    </com.ceshi.android.util.MySwipeRefreshLayout>
+</LinearLayout>
